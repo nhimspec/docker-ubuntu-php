@@ -1,12 +1,10 @@
 FROM ubuntu:16.04
 
-MAINTAINER khoapbt@rikkeisoft.com
+LABEL AUTHOR="khoapbt@rikkeisoft.com"
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV http_proxy 'http://192.168.1.2:3128'
 ENV https_proxy 'https://192.168.1.2:3128'
-
-COPY conf.d/apt.conf /etc/apt/apt.conf
 
 # Install, PHP
 RUN apt-get clean && apt-get -y update && apt-get install -y locales curl software-properties-common git \
