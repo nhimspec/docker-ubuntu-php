@@ -1,1 +1,1 @@
-# Docker build: PHP 7.1, Ubuntu 16.04, Redis, Supervisord, Node
+## Docker build: PHP 7.1, MySql 5.7, Ubuntu 16.04, Redis, Supervisord, Node
